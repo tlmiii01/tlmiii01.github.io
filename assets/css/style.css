@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    height: 100%;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("../images/light-grey-terrazzo.png");
+    /* font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; */
+    font-size: 16px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* Adding the font color here - need to see how this affects everything */
+    color: #777777;
+    line-height: 1.2rem;
+}
+
+header {
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 3px solid #cccccc;
+    margin: 0;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.content-size {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+}
+
+#mainContent {
+    background: #ffffff;
+    margin-top: 50px;
+    padding: 20px;
+    border: 2px solid #dddddd;
+}
+
+h1 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 28px;
+    color: #4aaaa5;
+    margin: 0;
+    border-bottom: 2px solid #dddddd;
+    padding-bottom: 20px;
+}
+
+#aboutPhoto {
+    height: 163px;
+    width: 244px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+#logo {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    float: left;
+    padding: 20px;
+    font-size: 32px;
+    background: #4aaaa5;
+    color: #fff;
+}
+
+.main-buttons {
+    position: absolute;
+    border: 0;
+    background: none;
+    padding: 1.6rem 0;
+    font-size: 18px;
+    width: 5rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.main-buttons:hover {
+    background: #4aaaa5;
+    color: #ffffff;
+}
+
+#contactButton {
+    right: 0rem;
+}
+
+#portButton {
+    right: 5rem;
+}
+
+#aboutButton {
+    right: 10rem;
+}
+
+.footer {
+    flex-shrink: 0;
+    padding: 30px 0 10px 0;
+    
+    border-top: 10px solid #4aaaa5;
+    text-align: center;
+    background: #666666;
+    /* Color is supposed to be #777777, but it seems too dark */
+    color: #aaaaaa;
+}
+
+label, input, textarea {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.submitButton {
+    width: 100px;
+    height: 30px;
+    background: #4aaaa5;
+    color: #ffffff;
+    border: 0;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+/* Styling Portfolio page */
+.portfolio-container {
+    position: relative;
+    margin: 30px 0;
+    height: 250px;
+}
+
+.portfolio-item {
+    position: relative;
+    float: left;
+    width: 33%;
+    height: 250px;
+    margin-right: 40px;
+}
+
+.portfolio-item > img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-item > a {
+    position: absolute;
+    bottom: 20px;
+    text-decoration: none;
+    background: #4aaaa5;
+    width: 100%;
+    padding: 1.5rem 0;
+    text-align: center;
+    color: #ffffff
+}
+
+
+.clearFix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
